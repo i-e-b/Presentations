@@ -28,6 +28,9 @@ General Principals
 
 Examples
 --------
+I should go into some depth with these, probably showing some level of TDD (a good chance to show BDD!). They would 
+probably flow quite well as a building-an-entire-system-from-the-ground-up type demo.
+
 * Single domain CQ seperation (admin cmd, admin qry)
 * Simple domain/view dislocation (publication)
 * Multiple subscriber transforms per message (content: disc vs. del)
