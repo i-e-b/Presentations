@@ -63,21 +63,39 @@ Other smells and principals (need to explain these well)
 * BAN stored procedures
  - They are the wrong place to separate; they cause dependencies that can't be inverted and difficult to break. They can't be easily refactored and make other refactoring a pain.
 
+Things to briefly mention
+-------------------------
+* Can swap out one service for another very easily (as long as contracts are OK)
+* Can playback live messages into staging systems
 
-A picture
----------
+A picture of communications
+---------------------------
 ```
-   .          +---------------+
-   .(cmd) --> | Cmd responder | --> +----------+              +---------+     +---------+
-   .          +---------------+     | serv bus |              | msg bus | --> | Handler |
-   .                __|__           +----------+              +---------+     +---------+
-   .               (_____)                |                        |             __|__
-   .               |_____|            ( store ) -- forward --> ( store )        (_____)
-   .                                                                            |_____|
-   .                                                                               |
-   .                                                                        +---------------+
-   .                                                            (qry) <--   | Qry responder |
-   .                                                                        +---------------+
+             +---------------+
+   (cmd) --> | Cmd responder | --> +----------+              +---------+     +---------+
+             +---------------+     | serv bus |              | msg bus | --> | Handler |
+                   __|__           +----------+              +---------+     +---------+
+                  (_____)                |                        |             __|__
+                  |_____|            ( store ) -- forward --> ( store )        (_____)
+                                                                               |_____|
+                                                                                  |
+                                                                           +---------------+
+                                                               (qry) <--   | Qry responder |
+                                                                           +---------------+
+```
+
+A picture of code
+-----------------
+```
+SevenDigital.Something
+ |
+ + TestSpecs
+ + Contracts
+ | + ... (links to common contracts) ...
+ + Persistence
+ + Service
+ + Host
+
 ```
 
 Useful notes
