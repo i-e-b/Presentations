@@ -2,6 +2,7 @@ BDD: Principles, practice, workflows
 ====================================
 
 To cover:
+
 * Effective pairing
  - Clear roles (driver, navigator) and their responsibilities
 * Reducing friction
