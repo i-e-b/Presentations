@@ -1,6 +1,8 @@
 BDD: Principles, practice, workflows
 ====================================
 
+Maybe do this as "a day in the life of a BDD team"?
+
 To cover:
 
 * Effective pairing
