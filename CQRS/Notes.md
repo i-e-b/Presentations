@@ -74,3 +74,7 @@ A picture
    .                                                            (qry) <--   | Qry responder |
    .                                                                        +---------------+
 ```
+
+Useful notes
+------------
+* http://nservicebus.com/ArchitecturalPrinciples.aspx
