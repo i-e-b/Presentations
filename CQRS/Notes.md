@@ -13,6 +13,8 @@ General Principals
 * Everything is either completely exposed or utterly hidden
  - Design by contract. Exposed means I can poke at it and use it to fulfill acceptance criteria
  - Exposure happens at well-defined endpoints
+ - Endpoints are generally best grouped into hierarchies of concerns (cmds/qrys wrapped in services, wrapped in servers)
+ - Splits in code also follow this -- methods wrapped in classes wrapped in solutions (one exposure project per solution works well)
 * Don't wait for work (command THEN query, not command-and-query)
 * Every endpoint should have a very clear responsibility (SRP - what am I trying to do?)
 * Chatty is better than heavy
