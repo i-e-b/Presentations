@@ -23,6 +23,8 @@ General Principals
 * Different domains should be completely separable (deployable on different servers on different continents separable)
 * SRP: Don't forget it!
 * Do not be scared of eventual consistency.
+* Be careful with SQL setup. Prefer ability to read over ability to write
+* Denormalise data as far as is reasonable
 
 Examples
 --------
