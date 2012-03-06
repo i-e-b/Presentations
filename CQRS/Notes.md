@@ -1,6 +1,8 @@
 CQRS - for separation, speed, scalability and testability
 =========================================================
 
+Presentation at http://prezi.com/ugduiowcpmt5/cqrs-for-separation-speed-scalability-and-testability/
+
 Separation: So we can change code in response to changing requirements
 
 Speed: Both of execution and development
