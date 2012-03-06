@@ -31,8 +31,13 @@ To cover:
  - Meaningful board -- asking "what are you doing" is banned! (or at least, should be redundant)
  - Catch Yak Shaving, acknowledge and minimise thrash (in self and team-mates)
  - Build servers stay green. A red build is all-hands-on-deck.
+ - Randomisation is your enemy! Reduce distractions (silence emails, im; get people used to waiting)
+ - If needed, block out time for other duties
+ - Don't wander off. Your team is your first responsibility.
 * Maintain flow
- - done != business value; Make sure acceptance crit are met in a professional and production-ready way; Tracking business value is for prioritisation.
+ - done != business value
+ - Make sure acceptance crit are met in a professional and production-ready way
+ - Tracking business value is for prioritisation.
 
 Workflow
 --------
