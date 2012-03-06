@@ -10,23 +10,23 @@ Testability: means both automated tests and human interaction tests.
 General Principals
 ------------------
 * Different views are different domains
+ - Different domains should be completely separable (deployable on different servers on different continents separable)
 * Everything is either completely exposed or utterly hidden
  - Design by contract. Exposed means I can poke at it and use it to fulfill acceptance criteria
  - Exposure happens at well-defined endpoints
  - Endpoints are generally best grouped into hierarchies of concerns (cmds/qrys wrapped in services, wrapped in servers)
  - Splits in code also follow this -- methods wrapped in classes wrapped in solutions (one exposure project per solution works well)
 * Don't wait for work (command THEN query, not command-and-query)
+ - Do not be scared of eventual consistency.
+ - Be careful with SQL setup. Prefer ability to read over ability to write
+ - Denormalise data as far as is reasonable
 * Every endpoint should have a very clear responsibility (SRP - what am I trying to do?)
 * Chatty is better than heavy
  - Simpler to understand and predict
  - easier to fit to a purpose (think *NIX tools vs. big GUIs)
  - easier to change functionality or implementation
  - Be fast -- really, really fast!
-* Different domains should be completely separable (deployable on different servers on different continents separable)
 * SRP: Don't forget it!
-* Do not be scared of eventual consistency.
-* Be careful with SQL setup. Prefer ability to read over ability to write
-* Denormalise data as far as is reasonable
 
 Examples
 --------
