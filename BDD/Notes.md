@@ -10,6 +10,7 @@ To cover:
 * Reducing friction
  - Anything that is not decision is friction (and what that means)
    * Waiting for software (esp unit tests, but including VS), typing, debugging.
+   * Waiting for other teams (hardware, resources) -- a team should be as self-sufficent as possible.
    * decision is [team|lone] discussions, thought, business analysis, story breakdowns...
  - Don't build systems that can't be moved.
    * Requiring a specific version of an OS is baaaad! (a minimum version is OK)
