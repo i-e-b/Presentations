@@ -49,6 +49,10 @@ Collateral improvements
  - No need to test persistence or actually send messages in a command, just sending the right message is enough.
  - No need to fake existing DBs in message handling, create a sample message and check you do the right thing.
  - Denormalised databases are very easy to test
+* Dependency de-coupling
+ - Because solutions are independent (no shared dbs or configs etc), dependency versions aren't so important.
+ - This means dependencies can be handled locally (PlatformBuild as an example)
+ - This means less time in TeamCity! :-)
 
 Anti-patterns
 -------------
