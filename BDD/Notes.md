@@ -47,6 +47,8 @@ Workflow
  - Spikes and discussions
  - Work out disputes before estimation
  - Stick to estimate even if it seems inaccurate later
+ - If a story can't be easily described, break it down
+ - If a story feels like more than a few days work (pref. more than 2 days work) break it down.
 * Maintain visibility
  - All work is to acceptance criteria (no task-based stories)
  - Everything in 'done' represents system as it is on live
